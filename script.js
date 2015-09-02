@@ -29,8 +29,8 @@ function squareHover(){
       $(this).css({"background": color});
     }else if(eraserChecked === true){
       $("#randomColor").prop("checked", false);
-      var opacity = $(this).css('opacity');
-      $(this).css('opacity', opacity - 0.1);
+      var opacity = $(this).css("opacity");
+      $(this).css("opacity", opacity - 0.1);
     }else{
       var color = $("#colorPicker").val();
       $(this).css({"background": color});
@@ -42,6 +42,7 @@ function squareHover(){
 function resetButton(){
   $("#resetColorButton").click(function(){
     $(".square").css({"background": "#000000"});
+    $(".square").css({"opacity": "1"});
   });
 }
 
